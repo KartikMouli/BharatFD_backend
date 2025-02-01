@@ -82,7 +82,7 @@ DATABASES = {
         "NAME": "faq_db",
         "USER": "myuser",
         "PASSWORD": "mypassword",
-        "HOST": "db",
+        "HOST": "localhost",
         "PORT": "5432",
     }
 }
@@ -120,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://redis:6379/1",
+        "LOCATION": "redis://127.0.0.1:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         },
