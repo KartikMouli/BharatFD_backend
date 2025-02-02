@@ -1,7 +1,7 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 from googletrans import Translator
-
+from django.core.cache import cache
 import asyncio
 
 class FAQ(models.Model):
