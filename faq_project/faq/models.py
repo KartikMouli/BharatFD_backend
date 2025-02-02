@@ -27,8 +27,6 @@ class FAQ(models.Model):
                 translated_answer_hi = await translator.translate(
                     self.answer, src="en", dest="hi"
                 )
-                print("--------------------------")
-                print(translated_answer_hi)
                 self.answer_hi = translated_answer_hi.text
 
             # Translate to Bengali
